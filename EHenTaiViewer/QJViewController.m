@@ -47,7 +47,7 @@
         [UIView animateWithDuration:0.25f animations:^{
             self.tipVC.view.alpha = 0;
         } completion:^(BOOL finished) {
-            _isRefreshing = NO;
+            self->_isRefreshing = NO;
             [self.tipVC stopAnimateWithTip:nil];
             [self.tipVC willMoveToParentViewController:nil];
             [self.tipVC.view removeFromSuperview];

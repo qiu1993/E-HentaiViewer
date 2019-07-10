@@ -10,7 +10,7 @@
 
 @class QJMangaImageModel;
 
-typedef void(^smallImageUrlBlock)();
+typedef void(^smallImageUrlBlock)(void);
 
 @protocol QJMangaImageModelDelegate <NSObject>
 

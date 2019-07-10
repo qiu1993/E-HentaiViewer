@@ -140,13 +140,13 @@
             return;
         }
         else if (indexPath.row == 2) {
-            Toast(@"网站系统改版,暂不可用");
-            return;
             //检测是否登录
             if (![[QJHenTaiParser parser] checkCookie]) {
                 Toast(@"请先前进行登录");
                 return;
             }
+            Toast(@"网站系统改版,暂不可用");
+            return;
         }
         QJSettingWatchSettingController *vc = [QJSettingWatchSettingController new];
         vc.type = indexPath.row;
